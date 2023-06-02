@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Search</title>
+    </head>
+
+
+    <style>
+        .Navigation{
+            text-align: right;
+            
+        }
+
+        .Links{
+            display: inline-block;
+            vertical-align: middle;
+            padding: 4px;
+            
+        }
+
+        .child{
+            float: right;
+        }
+        
+        .Top{
+            text-align: left;
+            vertical-align: middle;
+            padding: 5px;
+        }
+
+        #logo{
+            width: 125px;
+            height: 40px;
+        }
+
+        .flex-container{
+            width: 700px;
+            height: 500px;
+            padding: 20px;
+            
+        }
+
+        .flex-box{
+            width: 850px;
+            height: 40px;
+        }
+
+        .flex-child-label{
+            float: left;
+            width: 200px;
+        }
+
+        .flex-child-textbox{
+            float: left;
+        }
+
+        .right{
+            padding-left: 580px;
+        }
+
+        .Search-Lines{
+            padding-bottom: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .Search-Title{
+            width: 100px;
+            height: 50px;
+        }
+
+        #SearchBar{
+            border-radius: 3px;
+            border: 2px solid #d0d0d0; 
+            width: 500px;
+            height: 24px;
+        }
+
+        #AdvancedSearch{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            color: rgb(233, 38, 77);
+            padding-left: 40px;
+            padding-top: 200px;
+            
+        }
+
+        #Divider{
+            border-bottom: 1px solid lightgray;
+            padding-top: 15px;
+        }
+        #AdSearchBtn{
+            background-color: rgb(55, 158, 255);
+            color: white;
+            width: 125px;
+            height: 30px;
+            border: .05px solid white; 
+            border-radius: 3.5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+    </style>
+    
+    <body>
+        <div class='Navigation'>
+            <div class="Top">
+                <img id="logo" src="C:\Users\zbkma\OneDrive\Pictures\Google_logo_(2013-2015).svg.png">
+            
+                <div class="child">
+                    <div class="Links">
+                        <a href="index.html">
+                        Google
+                        </a>
+                    </div>
+                    <div class="Links">
+                        <a href="index2.html">
+                        Image
+                        </a>
+                    </div>
+                    <div class="Links">
+                        <a href="index3.html">
+                        Advanced
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="padding-top: 30px;">
+            <label id="AdvancedSearch" for="Advanced Search"> Advanced Search </label>
+        </div>
+        <div id="Divider"></div>
+        <div class="flex-container">
+            <div class="Search-Lines"> 
+                Find pages with... 
+            </div>
+            <div>
+                <form action="https://www.google.com/search">
+                
+                    <div class="flex-box">
+                        <div class="flex-child-label">
+                            <label>all these words:</label>
+                        </div>
+                        <div class="flex-child-textbox">
+                            <input id="SearchBar" type="text" name="as_q">
+                        </div>
+                    </div>
+                    <div class="flex-box">
+                        <div class="flex-child-label">
+                            <label>this exact word or phrase:</label> 
+                        </div>
+                        <div class="flex-child-textbox">
+                            <input id="SearchBar" type="text" name="as_epq">
+                        </div>
+                    </div>
+                    <div class="flex-box">
+                        <div class="flex-child-label">
+                            <label>any of these words:</label>
+                        </div>
+                        <div class="flex-child-textbox"> 
+                            <input id="SearchBar" type="text" name="as_oq">
+                        </div>
+                    </div>
+                    <div class="flex-box">
+                        <div class="flex-child-label">
+                            <label>none of these words:</label> 
+                        </div>
+                        <div class="flex-child-textbox"> 
+                            <input id="SearchBar" type="text" name="as_eq">
+                        </div>
+                    </div>  
+                    <div class="right">
+                        <button id="AdSearchBtn"> Advanced Search </button>
+                    </div>
+                </form>
+            </div>  
+        </div>
+    </body>
+</html>

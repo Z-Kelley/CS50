@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Search</title>
+    </head>
+
+
+    <style>
+        .Navigation{
+            text-align: right;
+        }
+
+        .Links{
+            display: inline-block;
+            vertical-align: middle;
+            padding: 4px;
+        }
+
+        .Center{
+            text-align: center;
+            justify-content: center;
+        }
+
+        #SearchBar{
+            border-radius: 25px;
+            border: 2px solid #d0d0d0;
+            padding: 15px;
+            width: 600px;
+            height: 20px;
+        }
+        #SearchButton{
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            padding: 5px;
+            
+        }
+
+        .flex-container{
+            padding: 50px;
+            align-content: center;
+            justify-content: center;
+            width: 600px;
+            height: 160px;
+        }
+
+        #logo{
+            justify-content: center;
+            align-content: center;
+            width: 600px;
+            height: 200px;
+            text-align: center;
+            padding-bottom: 75px;
+        }
+        
+
+    </style>
+    
+    <body>
+        <div class='Navigation'>
+            
+            <div class="Links">
+                <a href="index.html">
+                Google
+                </a>
+            </div>
+            <div class="Links">
+                <a href="index2.html">
+                Images
+                </a>
+            </div>
+            <div class="Links">
+                <a href="index3.html">
+                Advanced
+                </a>
+            </div>
+        </div>
+        <div class="flex-container">
+
+        </div>
+        <div class="Center">
+            <img id="logo" src="C:\Users\zbkma\OneDrive\Pictures\Google_logo_(2013-2015).svg.png">
+            <form action="https://google.com/search">
+                <div>
+                <input type="text" name="q" placeholder="Search Google or type a URL" id="SearchBar">
+                </div>
+            </br>
+                <div>
+                <input type="submit" value="Google Search" id="SearchButton" >
+                <input type="submit" value="I'm Feeling Lucky" id="SearchButton" name="btnI">
+                </div>
+            </form>
+        </div>
+    
+    </body>
+</html>

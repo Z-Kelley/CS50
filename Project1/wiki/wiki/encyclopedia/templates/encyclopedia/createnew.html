@@ -1,0 +1,52 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+{% if edit %}
+Editing {{title}}
+{% else %}
+Create New Entry
+{% endif%}
+
+{% endblock %}
+{% block body %}
+{% if edit %}
+<h1>Editing {{title}}</h1>
+
+<form method="POST" action="{% url 'saveEdit' %}">
+    {% csrf_token %}
+    <div class="Form-Item">
+        {{ form.title }}
+    </div>
+    <div class="Form-Item">
+        {{ form.description }} 
+    </div>
+    <div class="Form-Item">
+        <button name="Save-Btn" type="submit">Submit</button>
+    </div>
+</form>
+{% else %}
+
+    {% if existing %}
+    <h1>An Entry With That Title Already Exists!</h1>
+    {% else %}
+
+
+
+
+        <form method="POST">
+            {% csrf_token %}
+            <div class="Form-Item">
+                {{ form.title }}
+            </div>
+            <div class="Form-Item">
+                {{ form.description }} 
+            </div>
+            <div class="Form-Item">
+                <button name="Save-Btn" type="submit">Submit</button>
+            </div>
+        </form>
+
+    {% endif %}
+{% endif%}
+{% endblock %}

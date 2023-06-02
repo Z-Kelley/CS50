@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Search</title>
+    </head>
+
+
+    <style>
+        .Navigation{
+            text-align: right;
+        }
+
+        .Links{
+            display: inline-block;
+            vertical-align: middle;
+            padding: 4px;
+        }
+
+        .Center{
+            text-align: center;
+            justify-content: center;
+        }
+
+        #SearchBar{
+            border-radius: 25px;
+            border: 2px solid #d0d0d0;
+            padding: 15px;
+            width: 600px;
+            height: 20px;
+        }
+
+        #SearchButton{
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            padding: 5px;
+               
+        }
+
+        #logo{
+            justify-content: center;
+            width: 600px;
+            height: 200px;
+            padding-bottom: 75px;
+        }
+
+        .flex-container{
+            padding: 50px;
+            align-content: center;
+            justify-content: center;
+            width: 600px;
+            height: 160px;
+        }
+
+
+
+    </style>
+    
+    <body>
+        <div class='Navigation'>
+            
+            <div class="Links">
+                <a href="index.html">
+                Google
+                </a>
+            </div>
+            <div class="Links">
+                <a href="index2.html">
+                Image
+                </a>
+            </div>
+            <div class="Links">
+                <a href="index3.html">
+                Advanced
+                </a>
+            </div>
+        </div>
+        <div class="flex-container">
+
+        </div>
+        <div class="Center">
+            <img id="logo" src="C:\Users\zbkma\OneDrive\Pictures\Google_logo_(2013-2015).svg.png">
+            <form action="http://images.google.com/images">
+                <div>
+                <input type="text" name="q" placeholder="Search Google for an Image" id="SearchBar">
+                </div>
+            </br>
+                <div>
+                <input type="submit" value="Image Search" id="SearchButton" >
+                </div>
+            </form>
+        </div>
+    
+    </body>
+</html>

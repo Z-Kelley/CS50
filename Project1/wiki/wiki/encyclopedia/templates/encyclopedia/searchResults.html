@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <h1>Related Pages</h1>
+    {% if query %}
+
+        <ul>
+            {% for entry in entries %}
+            <li><a href="../wiki/{{entry}}">{{ entry }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h1>Oops! Looks like you for got to type something...</h1>
+
+    {% endif %}
+
+{% endblock %}
